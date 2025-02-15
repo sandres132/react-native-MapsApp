@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ActivityIndicator } from 'react-native';
 import { UseCalcularDigitos } from '../../hooks/useCalcularDigitos';
+import { globalStyles } from '../../../config/theme/styles';
 
 export const LoadingScreen = () => {
 
     return (
-        <View>
-            <Text>LoadingScreen</Text>
+        <View style={ globalStyles.container }>
+            <ActivityIndicator size={30} color={'black'}/>
         </View>
     )
 }

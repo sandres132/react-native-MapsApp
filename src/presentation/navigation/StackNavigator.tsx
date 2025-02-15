@@ -15,8 +15,8 @@ const Stack = createStackNavigator<RootStackParams>();
 export const StackNavigator = () => {
     return (
         <Stack.Navigator
-            // initialRouteName='LoadingScreen'
-            initialRouteName='PermissionsScreen'
+            initialRouteName='LoadingScreen'
+            // initialRouteName='PermissionsScreen'
             screenOptions={{
 
                 headerShown: false,
